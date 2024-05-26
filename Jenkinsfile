@@ -9,18 +9,30 @@ pipeline {
     stages {
         stage('Compile') {
             steps {
-               echo "compiling teh code"
+               
+                echo "COMPILING"
+                
             }
+
+            
         }
-        stage('UnitTest') {
+        stage('Test') {
             steps {
-               echo "Test teh code"
+               
+                echo "TESTING"
+           
             }
+
+            
         }
-        stage('Package') {
+        stage('Packagee') {
             steps {
-               echo "Package teh code"
+               
+                echo "PACKAGING"
+                
             }
+
+            
         }
     }
 }
