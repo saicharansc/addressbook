@@ -10,7 +10,7 @@ then
    cd /home/ec2-user/addressbook
    git pull origin test
 else
-   git clone https://github.com/saicharansc/addressbook.giti
+   git clone https://github.com/saicharansc/addressbook.git
    cd addressbook
    git checkout test 
 
