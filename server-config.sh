@@ -8,15 +8,13 @@ if [ -d "addressbook" ]
 then
    echo "repo is already cloned and exists"
    cd /home/ec2-user/addressbook
+   git checkout test
    git pull origin test
 else
    git clone https://github.com/saicharansc/addressbook.git
    cd addressbook
-   git checkout test 
-
+   git checkout test
 fi
 
-export JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.402.b06-1.amzn2.0.1.x86_64
-export PATH=$JAVA_HOME/bin:$PATH
-source /etc/profile
+cd addressbook
 mvn package
