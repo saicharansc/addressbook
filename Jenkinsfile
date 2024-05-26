@@ -30,7 +30,6 @@ pipeline {
 
             }
         }
-    }
         stage('Package') {
 	    agent any
             steps {
@@ -39,3 +38,4 @@ pipeline {
             }
         }
     }
+}
