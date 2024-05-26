@@ -6,6 +6,7 @@ pipeline {
         maven "mymaven"
     }
 
+
     stages {
         stage('Compile') {
             steps {
