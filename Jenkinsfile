@@ -30,6 +30,7 @@ pipeline {
 
             }
         }
+    }
         stage('Package') {
 	    agent {label "linux_slave"} 
             steps {
